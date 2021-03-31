@@ -1,9 +1,9 @@
 const { ApolloServer } = require('apollo-server');
 const { makeExecutableSchema } = require('@graphql-tools/schema');
-// const RestaurantsAPI = require('./rest-data/data-source');
+const RestaurantsAPI = require('./rest-data/data-source');
 
-// const restauarantTypeDef = require('./rest-data/schema');
-// const restaurantResolver = require('./rest-data/resolver');
+const restauarantTypeDef = require('./rest-data/schema');
+const restaurantResolver = require('./rest-data/resolver');
 
 const noteTypeDef = require('./grpc-data/schema');
 const noteResolver = require('./grpc-data/resolver');
@@ -25,7 +25,7 @@ const server = new ApolloServer({
 });
 
 
-server.listen(8000).then(() => {
+server.listen(8080).then(() => {
   console.log(`
     API Gateway Server is running!
     Listening on port 8000

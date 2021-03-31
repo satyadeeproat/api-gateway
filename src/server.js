@@ -28,6 +28,6 @@ const server = new ApolloServer({
 server.listen(8080).then(() => {
   console.log(`
     API Gateway Server is running!
-    Listening on port 8000
+    Listening on port 8080
   `);
 });

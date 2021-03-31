@@ -1,7 +1,7 @@
 
 
 const client = require('./grpc-client');
-console.log(client, 'here');
+
 const resolvers = {
     Query: {
       getNotesList: async () => {
